@@ -1,3 +1,3 @@
 # Project1
 
-CREAT TABLE
+CREATE TABLE
