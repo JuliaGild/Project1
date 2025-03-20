@@ -1,107 +1,131 @@
 # Project1
 
 USE al_Group_47114_G2;
+
 CREATE TABLE Patient (
-  patientID INT,
-  patientName VARCHAR(45),
-  patientMedHistory VARCHAR(45),
-  patientBirthDay VARCHAR(45),
-  patientGender VARCHAR(45),
-  patientPhoneNumber VARCHAR(45),
-  providerID VARCHAR(45),
-  PRIMARY KEY (patientID));
-
-
-CREATE TABLE Staff (
-  staffID INT NOT NULL,
-  staffName VARCHAR(45),
-  staffRole VARCHAR(45),
-  staffNumber VARCHAR(45),
-  staffDOB VARCHAR(45),
-  staffGender VARCHAR(45),
-  PRIMARY KEY (staffID));
-
+    patientID INT,
+    patientName VARCHAR(45),
+    patientHistory VARCHAR(255),
+    patientBday VARCHAR(45),
+    patientGender VARCHAR(45),
+    patientPhone VARCHAR(45),
+    providerID INT,
+    PRIMARY KEY(patientID),
+    FOREIGN KEY(providerID) REFERENCES InsuranceProvider(providerID)
+);
 
 CREATE TABLE Visit (
-  visitID INT,
-  patientID VARCHAR(45),
-  dateVisit VARCHAR(45),
-  providerID VARCHAR(45),
-  PRIMARY KEY (visitID));
-
-
-CREATE TABLE Billing (
-  billID INT,
-  billDescripton VARCHAR(45),
-  billAmount VARCHAR(45),
-  patientID VARCHAR(45),
-  providerID VARCHAR(45),
-  statusID VARCHAR(45),
-  PRIMARY KEY (billID));
-
-
-CREATE TABLE Medicine (
-  medicineID INT,
-  medicineName VARCHAR(45),
-  medicineDosage VARCHAR(45),
-  medicineManufacturer VARCHAR(45),
-  PRIMARY KEY (medicineID));
-
-
-CREATE TABLE Prescription (
-  prescriptionID INT,
-  patientID VARCHAR(45),
-  medicineID VARCHAR(45),
-  dosageAmt VARCHAR(45),
-  frequency VARCHAR(45),
-  providerID VARCHAR(45),
-  PRIMARY KEY (prescriptionID));
-
-
-CREATE TABLE Inventory (
-  quantityOnHand INT,
-  itemID VARCHAR(45),
-  itemName VARCHAR(45),
-  itemDescription VARCHAR(45),
-  category VARCHAR(45),
-  unitCost VARCHAR(45),
-  PRIMARY KEY (quantityOnHand));
-
-
+    visitID INT,
+    dateVisited VARCHAR(45),
+    patientID INT,
+    staffID INT,
+    PRIMARY KEY(visitID),
+    FOREIGN KEY(patientID) REFERENCES Patient(patientID),
+    FOREIGN KEY(staffID) REFERENCES Staff(staffID)
+);
 
 CREATE TABLE InsuranceProvider (
-  providerID INT,
-  providerName VARCHAR(45),
-  PRIMARY KEY (providerID));
-
+    providerID INT,
+    providerName VARCHAR(45),
+    PRIMARY KEY(providerID)
+);
 
 CREATE TABLE InsuranceClaim (
-  claimID INT,
-  claimPatient VARCHAR(45),
-  claimDescription VARCHAR(45),
-  claimDate VARCHAR(45),
-  claimAmount VARCHAR(45),
-  PRIMARY KEY (claimID));
+    claimID INT,
+    claimPatient INT,
+    claimDescription VARCHAR(255),
+    claimDate VARCHAR(45),
+    claimAmount VARCHAR(45),
+    providerID INT,
+    billingID INT,
+    PRIMARY KEY(claimID),
+    FOREIGN KEY(claimPatient) REFERENCES Patient(patientID),
+    FOREIGN KEY(providerID) REFERENCES InsuranceProvider(providerID),
+    FOREIGN KEY(billingID) REFERENCES Billing(billingID)
+);
+
+CREATE TABLE Staff (
+    staffID INT,
+    staffName VARCHAR(45),
+    staffRole VARCHAR(45),
+    staffNumber VARCHAR(45),
+    staffDOB VARCHAR(45),
+    staffGender VARCHAR(45),
+    billing VARCHAR(45),
+    roomID INT,
+    PRIMARY KEY(staffID),
+    FOREIGN KEY(roomID) REFERENCES Schedule(roomID)
+);
+
+CREATE TABLE Schedule (
+    roomID INT,
+    doctorID INT,
+    nurseID INT,
+    onCallStatus VARCHAR(45),
+    shiftNotes VARCHAR(255),
+    PRIMARY KEY(roomID),
+    FOREIGN KEY(doctorID) REFERENCES Staff(staffID),
+    FOREIGN KEY(nurseID) REFERENCES Staff(staffID)
+);
+
+CREATE TABLE Prescription (
+    prescriptionID INT,
+    dosageAmt VARCHAR(45),
+    frequency VARCHAR(45),
+    patientID INT,
+    staffID INT,
+    roomID INT,
+    PRIMARY KEY(prescriptionID),
+    FOREIGN KEY(patientID) REFERENCES Patient(patientID),
+    FOREIGN KEY(staffID) REFERENCES Staff(staffID),
+    FOREIGN KEY(roomID) REFERENCES Schedule(roomID)
+);
+
+CREATE TABLE ReceiptOfStorage (
+    receiptID INT,
+    medicineID INT,
+    storageID INT,
+    dosageReceived INT,
+    PRIMARY KEY(receiptID),
+    FOREIGN KEY(medicineID) REFERENCES Medicine(medicineID),
+    FOREIGN KEY(storageID) REFERENCES Storage(storageID)
+);
+
+CREATE TABLE Storage (
+    storageID INT,
+    storageName VARCHAR(45),
+    storageCapacity VARCHAR(45),
+    PRIMARY KEY(storageID)
+);
 
 CREATE TABLE Payment (
-  paymentID INT,
-  paymentAmount VARCHAR(45),
-  paymentMethod VARCHAR(45),
-  billID VARCHAR(45),
-  PRIMARY KEY (paymentID));
+    paymentID INT,
+    paymentAmount VARCHAR(45),
+    paymentMethod VARCHAR(45),
+    billingID INT,
+    PRIMARY KEY(paymentID),
+    FOREIGN KEY(billingID) REFERENCES Billing(billingID)
+);
 
+CREATE TABLE Medicine (
+    medicineID INT,
+    medicineName VARCHAR(45),
+    recommendedMedicineDosage VARCHAR(45),
+    medicineManufacturer VARCHAR(45),
+    prescriptionID INT,
+    patientID INT,
+    PRIMARY KEY(medicineID),
+    FOREIGN KEY(prescriptionID) REFERENCES Prescription(prescriptionID),
+    FOREIGN KEY(patientID) REFERENCES Patient(patientID)
+);
 
-CREATE TABLE OfficeSchedule (
-  roomID INT,
-  doctorID VARCHAR(45),
-  nurseID VARCHAR(45),
-  onCallStatus VARCHAR(45),
-  shiftNotes VARCHAR(45),
-  PRIMARY KEY (roomID));
-
-
-CREATE TABLE ServiceUsage (
-  serviceID INT,
-  UsageID VARCHAR(45),
-  PRIMARY KEY (serviceID));
+CREATE TABLE Billing (
+    billingID INT,
+    billDescription VARCHAR(255),
+    billAmt VARCHAR(45),
+    statusID INT,
+    patientID INT,
+    PRIMARY KEY(billingID),
+    FOREIGN KEY(patientID) REFERENCES Patient(patientID)
+);
   
