@@ -1,7 +1,7 @@
-# Project 1 4610
+# Team 2 Project 1 4610
 
 ## Team Name
-Group 2
+11:10am-12:20pm Group 2
 
 ## Team Members
 - Julia Gild [@JuliaGild](https://github.com/JuliaGild)
