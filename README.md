@@ -1,4 +1,4 @@
-# Project 1 4610 Group Project 1
+# Project 1 4610
 
 ## Team Name
 Group 2
