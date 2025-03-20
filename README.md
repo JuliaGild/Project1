@@ -168,10 +168,13 @@ CREATE TABLE Visit (
 
 ## Queries
 ### Complex
-1. Query 1: List the total billing amount for each patient along with the number of payments they have made.![Query 1](https://github.com/user-attachments/assets/040bab2f-13ee-459e-b880-b2facc89553b) <br>
+1.C- Query 1: List the total billing amount for each patient along with the number of payments they have made.![Query 1](https://github.com/user-attachments/assets/040bab2f-13ee-459e-b880-b2facc89553b) <br>
 This query provides valuable insights into patient billing and payment behavior by calculating the total billing amount for each patient and tracking the number of payments they have made. The total billing amount reveals how much a patient has been charged overall, giving the hospital a clear view of their financial responsibility. Meanwhile, the number of payments indicates how actively a patient has been addressing their bills. This information is particularly useful for identifying patients who may be at financial risk, especially if they have a high total billing amount but few payments recorded. Additionally, tracking payment patterns can help the hospital predict cash flow, manage collections more effectively, and prioritize follow-up actions for patients who may require financial guidance or support.
 
-3. 
+2. C- Query 2: List the storage facilities that are nearing capacity. ![Q2](https://github.com/user-attachments/assets/51c3e74c-eb76-45cf-a7f0-0ef860b013b3) <br>
+This query identifies which storage facilities are approaching their maximum capacity, providing crucial information for inventory management. By highlighting facilities that are nearly full, the hospital can take proactive measures such as redistributing supplies, adjusting delivery schedules, or planning for additional storage space. Monitoring storage levels is essential to ensure that medical supplies, medications, and equipment are always available without risking overstocking or space constraints. Identifying these trends early helps maintain operational efficiency and prevents potential disruptions in patient care due to supply shortages
+
+4. 
 
 
 
