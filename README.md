@@ -199,7 +199,7 @@ The query retrieves patients whose medical history includes procedures related t
 <img width="366" alt="Screenshot 2025-03-20 at 3 10 07 PM" src="https://github.com/user-attachments/assets/41ed1961-a7d0-4bd7-b11c-e4571fb04b80" /> <br>
 The hospital uses this query to identify patients who have never filed an insurance claim, helping staff understand who may be paying out-of-pocket or not utilizing their insurance benefits. This allows the hospital to provide financial guidance, assist with claim filing, and ensure patients are aware of available coverage. By analyzing this data, the hospital can improve billing efficiency, enhance patient support programs, and reduce the risk of missed reimbursements.
 
-###Simple
+### Simple
 9. S- Query 1: Find patients with a claim amount greater than the average claim amount of their insurance provider.
 <img width="445" alt="Screenshot 2025-03-20 at 3 10 51 PM" src="https://github.com/user-attachments/assets/be99ff06-2b5b-41b5-b233-6935979efbbe" /> <br>
 This query helps the hospital flag patients whose claims are significantly higher than the average for their insurance provider. If a patient has a higher-than-average claim, it could mean they have a more complex medical condition requiring additional care or specialized treatment. For example, if a patient consistently has high claims, they might have ongoing health issues that need closer monitoring. It could also help identify potential billing discrepancies, ensuring accurate claims and preventing overcharges. By spotting these patterns, the hospital can improve financial planning, optimize resource allocation, and enhance patient care for those with complex medical needs.
