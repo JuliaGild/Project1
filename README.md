@@ -19,18 +19,19 @@ This data model represents a hospital management system, detailing the relations
 <img width="622" alt="Screenshot 2025-03-20 at 2 38 02 PM" src="https://github.com/user-attachments/assets/68b0ae8a-f690-4f2e-8200-9d60bf4afee1" />
 
 ## Data Model Dictionary
-<img width="684" alt="Screenshot 2025-03-20 at 2 43 51 PM" src="https://github.com/user-attachments/assets/69fefb3a-f630-4168-a4bc-5487f6de0abb" />
-<img width="646" alt="Screenshot 2025-03-20 at 2 43 48 PM" src="https://github.com/user-attachments/assets/2319a1c2-ee01-464c-bc1f-5c696fb95c3c" />
-<img width="718" alt="Screenshot 2025-03-20 at 2 43 43 PM" src="https://github.com/user-attachments/assets/307bcf8c-c228-4dba-9b93-44b5bffb6eef" />
-<img width="707" alt="Screenshot 2025-03-20 at 2 43 39 PM" src="https://github.com/user-attachments/assets/4d853fa2-5cbd-4baa-a859-32143b438bb3" />
-<img width="717" alt="Screenshot 2025-03-20 at 2 43 28 PM" src="https://github.com/user-attachments/assets/e469a352-42fa-43f0-a9df-fd3a0cc80e77" />
-<img width="703" alt="Screenshot 2025-03-20 at 2 43 23 PM" src="https://github.com/user-attachments/assets/b13606fa-3c11-477c-86ae-a80afe532944" />
-<img width="703" alt="Screenshot 2025-03-20 at 2 43 09 PM" src="https://github.com/user-attachments/assets/48d210bc-d9ca-46c9-b618-052698e21ddf" />
-<img width="702" alt="Screenshot 2025-03-20 at 2 43 04 PM" src="https://github.com/user-attachments/assets/b137cdde-a8e0-4715-ae8f-d10b9ec7367e" />
-<img width="690" alt="Screenshot 2025-03-20 at 2 42 46 PM" src="https://github.com/user-attachments/assets/d8a7d078-4640-4e57-bae5-133662df1b57" />
-<img width="697" alt="Screenshot 2025-03-20 at 2 42 40 PM" src="https://github.com/user-attachments/assets/bafa6414-2d2d-40d3-9cba-7874a5b85956" />
-<img width="728" alt="Screenshot 2025-03-20 at 2 42 33 PM" src="https://github.com/user-attachments/assets/51125bc2-cf85-4ec2-afa2-e48ad393a10a" />
-<img width="717" alt="Screenshot 2025-03-20 at 2 42 03 PM" src="https://github.com/user-attachments/assets/685107c2-1540-4881-bfe5-9a862d307c81" />
+<img width="717" alt="Screenshot 2025-03-20 at 2 42 03 PM" src="https://github.com/user-attachments/assets/d1133be9-2596-4ec2-85d0-2d87747f9587" />
+<img width="728" alt="Screenshot 2025-03-20 at 2 42 33 PM" src="https://github.com/user-attachments/assets/25608577-ffca-402f-aaa9-7de57a28e264" />
+<img width="697" alt="Screenshot 2025-03-20 at 2 42 40 PM" src="https://github.com/user-attachments/assets/d14b8af3-cbde-4524-ad65-5c63ad2dfb95" />
+<img width="690" alt="Screenshot 2025-03-20 at 2 42 46 PM" src="https://github.com/user-attachments/assets/9f278835-984f-4a59-b3bc-2f62adf5cb19" />
+<img width="702" alt="Screenshot 2025-03-20 at 2 43 04 PM" src="https://github.com/user-attachments/assets/c4fec4b3-a77f-4c09-860f-ff133fee0ca4" />
+<img width="703" alt="Screenshot 2025-03-20 at 2 43 09 PM" src="https://github.com/user-attachments/assets/53f843d6-9771-49c0-882e-f54c46a66a27" />
+<img width="703" alt="Screenshot 2025-03-20 at 2 43 23 PM" src="https://github.com/user-attachments/assets/22b89ac5-1992-488e-bc95-547b2b930939" />
+<img width="717" alt="Screenshot 2025-03-20 at 2 43 28 PM" src="https://github.com/user-attachments/assets/f8cf0371-f8d3-484b-857a-d08b2005e19e" />
+<img width="707" alt="Screenshot 2025-03-20 at 2 43 39 PM" src="https://github.com/user-attachments/assets/40f70552-28a2-47fb-9c14-cf55bb564fd7" />
+<img width="718" alt="Screenshot 2025-03-20 at 2 43 43 PM" src="https://github.com/user-attachments/assets/a2dac057-3d28-450e-97a8-4feb1647d191" />
+<img width="646" alt="Screenshot 2025-03-20 at 2 43 48 PM" src="https://github.com/user-attachments/assets/20bc1a4a-0478-475e-91f7-1073a9385472" />
+<img width="684" alt="Screenshot 2025-03-20 at 2 43 51 PM" src="https://github.com/user-attachments/assets/f3d8c251-ab15-44e3-a992-0e794c2ac986" />
+
 
 
 
