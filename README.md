@@ -195,7 +195,7 @@ This query is designed to retrieve the most recent prescription for each patient
 7. C- Query 7: List patients whose medical history includes specific procedures related to "Control Bleeding" or any kind of "Alteration". <img width="472" alt="Screenshot 2025-03-20 at 3 09 16 PM" src="https://github.com/user-attachments/assets/b4ca220b-a766-4a4d-8dac-009ec975a7e9" /> <br>
 The query retrieves patients whose medical history includes procedures related to "Control Bleeding" or "Alteration" by using a regular expression (REGEXP) filter. The result set displays patient IDs, names, and relevant patient history entries, ensuring that only records matching the specified keywords appear. This approach is useful for quickly identifying patients who have undergone specific procedures, helping medical staff analyze trends, provide targeted treatments, and streamline decision-making.
 
-8. C- Query 8: Identify patients who have never filed an insurance claim.
+8. C- Query 8: Identify patients who have never filed an insurance claim. <br>
 <img width="366" alt="Screenshot 2025-03-20 at 3 10 07 PM" src="https://github.com/user-attachments/assets/41ed1961-a7d0-4bd7-b11c-e4571fb04b80" /> <br>
 The hospital uses this query to identify patients who have never filed an insurance claim, helping staff understand who may be paying out-of-pocket or not utilizing their insurance benefits. This allows the hospital to provide financial guidance, assist with claim filing, and ensure patients are aware of available coverage. By analyzing this data, the hospital can improve billing efficiency, enhance patient support programs, and reduce the risk of missed reimbursements.
 
