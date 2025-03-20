@@ -168,8 +168,7 @@ CREATE TABLE Visit (
 
 ## Queries
 ### Complex
-1. Query 1: List the total billing amount for each patient along with the number of payments they have made.
-![Query 1](https://github.com/user-attachments/assets/040bab2f-13ee-459e-b880-b2facc89553b)
+1. Query 1: List the total billing amount for each patient along with the number of payments they have made.![Query 1](https://github.com/user-attachments/assets/040bab2f-13ee-459e-b880-b2facc89553b)
 Justification: This query provides valuable insights into patient billing and payment behavior by calculating the total billing amount for each patient and tracking the number of payments they have made. The total billing amount reveals how much a patient has been charged overall, giving the hospital a clear view of their financial responsibility. Meanwhile, the number of payments indicates how actively a patient has been addressing their bills. This information is particularly useful for identifying patients who may be at financial risk, especially if they have a high total billing amount but few payments recorded. Additionally, tracking payment patterns can help the hospital predict cash flow, manage collections more effectively, and prioritize follow-up actions for patients who may require financial guidance or support.
 
 3. 
