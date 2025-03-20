@@ -6,7 +6,7 @@ Group 2
 ## Team Members
 - Julia Gild [@JuliaGild](https://github.com/JuliaGild)
 - John Neely [@NeelyJohn](https://github.com/NeelyJohn)
-- Valerie Tran [@ValerieTran](https://github.com/ValerieTran)
+- Valerie Tran [@ValerieTran](https://github.com/vvt15)
 - Jack Glawatz [@jackglawatz](https://github.com/jackglawatz)
 - Oluwabukola Ogundare [@RachaelOgundare](https://github.com/RachaelOgundare)
 
